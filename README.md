@@ -1,4 +1,5 @@
 
+
 # IPA Server
 This node server will let you distribute your iOS IPA file to anyone over-the-air (on the internet). It includes a Basic authentication scheme that you can customize so just authorized people can actually download it.
 
@@ -22,7 +23,7 @@ let login = 'admin';
 let password = 'admin';
 ```
 
-##### 2.3 Update release file with your host  
+##### 2.3 Update release.js file with your host  
 
 > Before reading any further, you should decide if you are going to use a web server or ngrok to access your IPA Server. If you choose ngrok, please read the optional **Ngrok configuration** step now.
 
@@ -34,6 +35,8 @@ Modify just the **HOST-HERE** part. e.g:
 ```
 <a href="itms-services://?action=download-manifest&url=https://<%= login %>:<%= password %>@df444895.ngrok.io/build/manifest.plist">Install App</a> <br>
 ```
+
+### **Make sure** to run your local IPAServer by running `node ./bin/www` from the terminal on the root folder. You should see something like: `Listening on port 3000`
 
 # Serving the IPA file
 First, you need to archive your project, click on Export and
