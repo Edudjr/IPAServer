@@ -1,7 +1,7 @@
 
 
 # IPA Server
-This node server will let you distribute your iOS IPA file to anyone over-the-air (on the internet). It includes a Basic authentication scheme that you can customize so just authorized people can actually download it.
+This node server will let you distribute your iOS IPA file to anyone over-the-air (on the internet). It includes a Basic authentication scheme that you can customize so just authorized people can actually download it. Be aware that if you don't have the devices registered in your provisioning profile, you will need to use the [Enterprise distribution](https://developer.apple.com/programs/enterprise/).
 
 It is really simple to use. After the initial configuration, all you need to do is run your server, archive your project and paste the build files inside the server. Please read the detailed steps bellow:
 
